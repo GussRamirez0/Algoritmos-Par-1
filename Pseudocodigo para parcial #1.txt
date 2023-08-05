@@ -1,0 +1,30 @@
+Pseudocodigo para parcial #1
+
+Algoritmo DescuentoEnTienda
+    Definir monto, descuento Como Real
+    
+    Escribir "Ingrese el monto de la compra: "
+    Leer monto
+    
+    Si monto < 500 Entonces
+        descuento = 0
+    FinSi
+    
+    Si monto >= 500 Y monto <= 1000 Entonces
+        descuento = monto * 0.05
+    FinSi
+    
+    Si monto > 1000 Y monto <= 7000 Entonces
+        descuento = monto * 0.11
+    FinSi
+    
+    Si monto > 7000 Y monto <= 15000 Entonces
+        descuento = monto * 0.18
+    FinSi
+    
+    Si monto > 15000 Entonces
+        descuento = monto * 0.25
+    FinSi
+    
+    Escribir "El descuento aplicado es de: ", descuento
+FinAlgoritmo
